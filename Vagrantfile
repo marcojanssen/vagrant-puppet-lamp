@@ -18,10 +18,10 @@ Vagrant.configure("2") do |config|
 
 
   #config.vm.synced_folder "./", "/var/www", id: "vagrant-root"
-  #config.vm.provision :puppet do |puppet|
-  #  puppet.manifests_path = "manifests"
-  #  puppet.module_path = "modules"
-  #  puppet.options = ['--verbose']
-  #end
+  config.vm.provision :puppet do |puppet|
+    puppet.manifests_path = "manifests"
+    puppet.module_path = "modules"
+    puppet.options = ['--verbose']
+  end
 end
 
