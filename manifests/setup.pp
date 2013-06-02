@@ -5,4 +5,6 @@ class setup {
     package { $default_packages :
         ensure => present,
     }
+
+    include site
 }

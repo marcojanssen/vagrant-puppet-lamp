@@ -1,4 +1,0 @@
-class sql {
-    include mysql
-}
-

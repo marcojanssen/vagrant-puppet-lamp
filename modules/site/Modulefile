@@ -1,0 +1,8 @@
+name    'project-puppet'
+version '1.0.0'
+author  'Marco Janssen'
+license 'Apache2'
+project_page 'http://www.example42.com'
+source  'https://github.com/lermit/puppet-php'
+summary 'Puppet module for php'
+description 'This module installs and manages php. Check README.rdoc for details. Puppi is required for some common functions: you can install them without using the whole module. Monitor and firewall dependencies are needed only if the relevant features are enabled'

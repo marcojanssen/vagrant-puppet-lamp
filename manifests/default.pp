@@ -3,9 +3,7 @@ Exec {
 }
 
 node default {
-    include params
+    include config
 }
 
 include setup
-include sql
-include web
