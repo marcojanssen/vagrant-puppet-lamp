@@ -1,0 +1,12 @@
+[submodule "modules/apache"]
+	path = modules/apache
+	url = http://github.com/example42/puppet-apache
+[submodule "modules/puppi"]
+	path = modules/puppi
+	url = https://github.com/example42/puppi.git
+[submodule "modules/php"]
+	path = modules/php
+	url = http://github.com/lermit/puppet-php
+[submodule "modules/mysql"]
+	path = modules/mysql
+	url = http://github.com/example42/puppet-mysql

@@ -7,3 +7,5 @@ node default {
 }
 
 include setup
+include sql
+include web
