@@ -1,0 +1,18 @@
+class site::site_php {
+
+    class { 'php':
+        require => Exec["apt-update"],
+    }
+
+    php::module { "common": }
+    php::module { "dev": }
+
+    #php::module { "mysql": }
+    #php::module { "intl": }
+    #php::module { "imagick": }
+    #php::module { "gd": }
+    #php::module { "mcrypt": }
+    #php::module { "curl": }
+    #php::module { "xdebug": }
+    #php::module { "apc": }
+}
