@@ -1,7 +1,7 @@
 class site::web {
 
     class { "apache":
-      require       => Exec["apt-update"],
+        require => Exec["apt-update"],
     }
 
     apache::module { "rewrite": }

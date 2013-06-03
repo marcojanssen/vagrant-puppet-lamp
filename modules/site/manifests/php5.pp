@@ -16,6 +16,7 @@ class site::php5 {
     php::module { "xdebug": }
     php::module { "mysql": }
     php::module { "xcache": }
+    php::module { "sqlite": }
 
     class { 'php::pear':
         require => Package["php"],
@@ -23,6 +24,7 @@ class site::php5 {
 
     exec { "phing-install":
         command => "pear channel-discover pear.phing.info; pear install phing/phing",
-        require => Class['php::pear']
+        require => Class['php::pear'],
+        refreshonly => true
     }
 }
