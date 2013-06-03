@@ -8,6 +8,6 @@ class site::sql {
     exec { 'sqlite-install':
         command => 'apt-get install sqlite3',
         require => Exec['apt-update'],
+        refreshonly => true
     }
-
 }
