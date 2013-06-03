@@ -15,6 +15,5 @@ class site::site_php {
     php::module { "curl": }
     php::module { "xdebug": }
     php::module { "mysql": }
-
-#php::module { "apc": }
+    php::module { "xcache": }
 }
