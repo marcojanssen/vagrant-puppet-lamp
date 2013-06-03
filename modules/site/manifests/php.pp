@@ -1,3 +1,5 @@
 class site::php {
-  include ::php
+
+    class { '::php':
+    }
 }
