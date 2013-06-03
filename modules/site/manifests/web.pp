@@ -15,6 +15,6 @@ class site::web {
     }
 
     exec { "link-webroot":
-      command => "rm -rf /var/www; ln -s /vagrant /var/www"
+        command => "rm -rf /var/www; ln -s /vagrant /var/www"
     }
 }

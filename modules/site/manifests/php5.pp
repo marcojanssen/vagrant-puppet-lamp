@@ -16,4 +16,13 @@ class site::php5 {
     php::module { "xdebug": }
     php::module { "mysql": }
     php::module { "xcache": }
+
+    class { 'php::pear':
+        require => Package["php"],
+    }
+
+    exec { "phing-install":
+        command => "pear channel-discover pear.phing.info; pear install phing/phing",
+        require => Class['php::pear']
+    }
 }
