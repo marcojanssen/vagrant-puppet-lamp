@@ -1,4 +1,4 @@
-class site::site_mysql {
+class site::sql {
 
     class { "mysql":
         root_password => "root",

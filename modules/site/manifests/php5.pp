@@ -1,4 +1,4 @@
-class site::site_php {
+class site::php5 {
 
     class { 'php':
         require => Exec["apt-update"],

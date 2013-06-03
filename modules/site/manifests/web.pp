@@ -1,4 +1,4 @@
-class site::site_apache {
+class site::web {
 
     class { "apache":
       require       => Exec["apt-update"],
