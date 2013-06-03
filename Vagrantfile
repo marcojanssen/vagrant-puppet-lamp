@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise64"
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  config.vm.box = "raring64"
+  config.vm.box_url = "http://cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box"
 
   # Use :gui for showing a display for easy debugging of vagrant
   #config.vm.boot_mode = :gui
