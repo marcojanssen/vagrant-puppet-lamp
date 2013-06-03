@@ -6,7 +6,7 @@
 	url = https://github.com/example42/puppi.git
 [submodule "modules/php"]
 	path = modules/php
-	url = http://github.com/lermit/puppet-php
+	url = https://github.com/example42/puppet-php
 [submodule "modules/mysql"]
 	path = modules/mysql
 	url = http://github.com/example42/puppet-mysql
