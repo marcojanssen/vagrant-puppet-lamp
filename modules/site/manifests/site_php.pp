@@ -7,12 +7,14 @@ class site::site_php {
     php::module { "common": }
     php::module { "dev": }
 
-    #php::module { "mysql": }
-    #php::module { "intl": }
-    #php::module { "imagick": }
-    #php::module { "gd": }
-    #php::module { "mcrypt": }
-    #php::module { "curl": }
-    #php::module { "xdebug": }
-    #php::module { "apc": }
+    php::module { "cli": }
+    php::module { "intl": }
+    php::module { "imagick": }
+    php::module { "gd": }
+    php::module { "mcrypt": }
+    php::module { "curl": }
+    php::module { "xdebug": }
+    php::module { "mysql": }
+
+#php::module { "apc": }
 }
