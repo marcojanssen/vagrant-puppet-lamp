@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "centos-64-64-puppet"
-  config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20130427.box"
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   # Use :gui for showing a display for easy debugging of vagrant
   #config.vm.boot_mode = :gui
