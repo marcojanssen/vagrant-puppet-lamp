@@ -5,4 +5,5 @@ class site {
     include site::web
     include site::php5
     include site::sql
+    include site::inosync
 }
