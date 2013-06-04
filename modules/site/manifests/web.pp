@@ -24,9 +24,4 @@ class site::web {
         command => "a2ensite default-ssl",
         require => Class['apache::ssl']
     }
-
-    /*== web link ==*/
-    exec { "link-webroot":
-        command => "rm -rf /var/www; ln -s /vagrant /var/www"
-    }
 }
