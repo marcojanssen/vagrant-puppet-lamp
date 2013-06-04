@@ -15,8 +15,10 @@ class site::php5 {
     php::module { "curl": }
     php::module { "xdebug": }
     php::module { "mysql": }
-    php::module { "xcache": }
     php::module { "sqlite": }
+    php::module { "apc":
+        module_prefix => "php-"
+    }
 
     class { 'php::pear':
         require => Package["php"],

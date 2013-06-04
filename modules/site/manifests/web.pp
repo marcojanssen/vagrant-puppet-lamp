@@ -7,6 +7,7 @@ class site::web {
 
     apache::module { "rewrite": }
     apache::module { "headers": }
+    apache::module { "expires": }
 
     /*== vhost ==*/
     apache::vhost { 'dev.local':
