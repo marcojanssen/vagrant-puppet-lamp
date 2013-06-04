@@ -20,13 +20,5 @@ class site::php5 {
         module_prefix => "php-"
     }
 
-    class { 'php::pear':
-        require => Package["php"],
-    }
 
-    exec { "phing-install":
-        command => "pear channel-discover pear.phing.info; pear install phing/phing",
-        require => Class['php::pear'],
-        refreshonly => true
-    }
 }
