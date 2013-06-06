@@ -20,5 +20,14 @@ class site::php5 {
         module_prefix => "php-"
     }
 
+    augeas { "php.ini":
+        notify  => Service['apache2'],
+        require => Package['php'],
+        context => "/files/etc/php5/apache2/php.ini",
+        changes => [
+            "set Date/date.timezone Europe/Amsterdam",
+        ];
+    }
+
 
 }

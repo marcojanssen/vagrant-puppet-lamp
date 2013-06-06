@@ -1,5 +1,7 @@
 class site {
 
+    include augeas
+
     include site::apt
     include site::composer
     include site::web

@@ -10,3 +10,9 @@
 [submodule "modules/mysql"]
 	path = modules/mysql
 	url = http://github.com/example42/puppet-mysql
+[submodule "modules/augeas"]
+	path = modules/augeas
+	url = https://github.com/camptocamp/puppet-augeas.git
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
