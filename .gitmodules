@@ -1,3 +1,6 @@
+[submodule "modules/apache"]
+	path = modules/apache
+	url = http://github.com/example42/puppet-apache
 [submodule "modules/puppi"]
 	path = modules/puppi
 	url = https://github.com/example42/puppi.git
@@ -7,15 +10,3 @@
 [submodule "modules/mysql"]
 	path = modules/mysql
 	url = http://github.com/example42/puppet-mysql
-[submodule "modules/apache"]
-	path = modules/apache
-	url = https://github.com/puppetlabs/puppetlabs-apache.git
-[submodule "modules/stdlib"]
-	path = modules/stdlib
-	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
-[submodule "modules/concat"]
-	path = modules/concat
-	url = https://github.com/ripienaar/puppet-concat.git
-[submodule "modules/firewall"]
-	path = modules/firewall
-	url = https://github.com/puppetlabs/puppetlabs-firewall.git

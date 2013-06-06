@@ -24,9 +24,4 @@ class site::web {
         command => "a2ensite default-ssl",
         require => Class['apache::ssl']
     }
-
-    exec { "www-chown":
-        command => "chown vagrant. /var/www",
-        require => Class['apache']
-    }
 }
