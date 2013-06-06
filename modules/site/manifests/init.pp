@@ -7,4 +7,5 @@ class site {
     include site::pear
     include site::phing
     include site::sql
+    include site::varnish
 }

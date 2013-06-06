@@ -6,6 +6,7 @@ class site::sql {
     }
 
     package { "sqlite3":
-        ensure => present
+        ensure => present,
+        require       => Exec["apt-update"]
     }
 }
