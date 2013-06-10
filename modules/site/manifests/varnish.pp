@@ -13,15 +13,19 @@ class site::varnish {
 
     file {
         "/etc/varnish/default.vcl":
-        ensure => present,
+        ensure  => present,
         require => Package["varnish"],
-        source => "puppet:///modules/site/varnish/default.vcl",
-        notify  => Service["varnish"];
+        source  => "puppet:///modules/site/varnish/default.vcl",
+        notify  => Service["varnish"],
+        owner   => 'root',
+        mode    => '0644';
 
         "/etc/default/varnish":
         ensure => present,
         require => Package["varnish"],
         source => "puppet:///modules/site/varnish/varnish",
-        notify  => Service["varnish"];
+        notify  => Service["varnish"],
+        owner   => 'root',
+        mode    => '0644';
     }
 }
