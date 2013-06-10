@@ -18,6 +18,7 @@ class site::varnish {
         source  => "puppet:///modules/site/varnish/default.vcl",
         notify  => Service["varnish"],
         owner   => 'root',
+        group   => 'root',
         mode    => '0644';
 
         "/etc/default/varnish":
@@ -26,6 +27,7 @@ class site::varnish {
         source => "puppet:///modules/site/varnish/varnish",
         notify  => Service["varnish"],
         owner   => 'root',
+        group   => 'root',
         mode    => '0644';
     }
 }
