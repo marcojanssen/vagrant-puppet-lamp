@@ -6,6 +6,4 @@ class setup {
         ensure => present,
         require => Exec['apt-update'],
     }
-
-    include site
 }
