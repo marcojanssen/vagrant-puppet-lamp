@@ -6,6 +6,7 @@ class setup {
         ensure => present,
         require => Exec['apt-update'],
     }
+    include project
 
     include project::composer
     include project::web
