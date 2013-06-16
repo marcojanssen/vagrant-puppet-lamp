@@ -6,4 +6,12 @@ class setup {
         ensure => present,
         require => Exec['apt-update'],
     }
+
+    include project::composer
+    include project::web
+    include project::php5
+    include project::pear
+    include project::phing
+    include project::sql
+    include project::varnish
 }
