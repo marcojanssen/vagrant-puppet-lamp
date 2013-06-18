@@ -15,4 +15,5 @@ class setup {
     include project::phing
     include project::sql
     include project::varnish
+    include project::mongodb
 }
