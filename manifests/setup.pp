@@ -16,4 +16,5 @@ class setup {
     include project::sql
     include project::varnish
     include project::mongodb
+    include project::gearman
 }
