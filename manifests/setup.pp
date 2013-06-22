@@ -1,7 +1,7 @@
 class setup {
 
     # Install some default packages
-    $default_packages = [ 'build-essential', 'vim', 'curl', 'mc', 'git' ]
+    $default_packages = [ 'build-essential', 'vim', 'curl', 'git', 'subversion' ]
     package { $default_packages :
         ensure => present,
         require => Exec['apt-update'],
@@ -15,4 +15,6 @@ class setup {
     include project::phing
     include project::sql
     include project::varnish
+    include project::mongodb
+    include project::gearman
 }

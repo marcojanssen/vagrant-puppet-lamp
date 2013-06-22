@@ -1,31 +1,30 @@
-vagrant-puppet-lamp
-===================
+# LAMP setup with Vagrant & Puppet #
 
-Vagrant setup with puppet as provisioner for a default lamp setup
+----------
 
-Includes the following:
+A out of the box solution for a Jenkins-CI setup, the server is installed with the following packages:
 
-Ubuntu 13
-PHP 5.4.10
-Apache 2 (including SSL)
-MySQL 5.5
-SQLite3
-Phing
+- Ubuntu 13.04 "Raring Ringtail"
+- Apache2
+- PHP 5.4.10
+- Pear
+- Phing
+- MySQL
+- SQLite 3
+- Subversion & Git
+- MongoDB
 
+## Requirements ##
 
-PHP modules installed:
-common
-dev
-cli
-imagick
-intl
-gd
-mcrypt
-curl
-xdebug
-xcache
-sqlite
-mysql
+- Vagrant
 
+## Installation ##
 
+- git clone https://github.com/marcojanssen/vagrant-puppet-lamp.git
+- git submodule init
+- git submodule update
+- vagrant up
 
+Change the IP adres to whatever you want in the Vagrantfile, and add that IP adres to your host file, for example:
+
+> 192.168.2.200 localdev
