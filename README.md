@@ -13,10 +13,12 @@ A out of the box solution for a Jenkins-CI setup, the server is installed with t
 - SQLite 3
 - Subversion & Git
 - MongoDB
+- Varnish
+- Gearman (not working yet)
 
 ## Requirements ##
 
-- Vagrant
+- Vagrant (tested on 1.2.7)
 
 ## Installation ##
 
