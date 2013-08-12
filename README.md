@@ -27,6 +27,6 @@ A out of the box solution for a Jenkins-CI setup, the server is installed with t
 - git submodule update
 - vagrant up
 
-Change the IP adres to whatever you want in the Vagrantfile, and add that IP adres to your host file, for example:
+Change the IP address to whatever you want in the Vagrantfile, and add that IP address to your host file, for example:
 
 > 192.168.2.200 localdev
