@@ -10,6 +10,7 @@ package { $default_packages :
 }
 include project
 
+include project::adminer
 include project::composer
 include project::web
 include project::php5
