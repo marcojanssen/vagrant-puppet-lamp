@@ -1,6 +1,7 @@
 ## 0.3.0 - current master
     * Added dotdeb repository
     * Added .bashrc & .vimrc
+    * Added adminer
 
 ## 0.2.0
     * Switched to Debian 7.2
