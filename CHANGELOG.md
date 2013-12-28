@@ -1,6 +1,6 @@
 ## 0.3.0 - current master
     * Added dotdeb repository
-    * Added .bashrc & .vimrc
+    * Added .bashrc
     * Added adminer
 
 ## 0.2.0
