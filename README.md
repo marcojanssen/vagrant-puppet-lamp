@@ -4,19 +4,21 @@
 
 A out of the box solution for a LAMP setup, Debian Wheezy 7.2 is installed with the following packages:
 
-- Apache2
-- PHP 5.4.10
+- Apache 2.2.22
+- Composer
+- Git
+- MongoDB 2.4.8
+- MySQL 5.5.33
 - Pear
+- PHP 5.4.23
 - Phing
-- MySQL
+- Subversion
 - SQLite 3
-- Subversion & Git
-- MongoDB
-- Varnish
+- Varnish 3.0.2
 
 ## Requirements ##
 
-- Vagrant (tested on 1.4.1)
+- Vagrant 1.4
 - Virtualbox 4.3
 
 ## Installation ##
