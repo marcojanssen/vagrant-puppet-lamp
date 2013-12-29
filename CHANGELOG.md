@@ -2,6 +2,7 @@
     * Added dotdeb repository
     * Added .bashrc
     * Added adminer
+    * Added default xdebug config
 
 ## 0.2.0
     * Switched to Debian 7.2
