@@ -11,6 +11,7 @@ A out of the box solution for a LAMP setup, Debian Wheezy 7.2 is installed with 
 - MongoDB 2.4.8
 - MySQL 5.5.33
 - Pear
+- Pecl
 - PHP 5.4.23
 - Phing
 - Subversion
@@ -33,7 +34,7 @@ Change the IP address to whatever you want in the Vagrantfile, and add that IP a
 
 > 192.168.2.200 *.localdev.nl
 
-Note: Sorry windows users, you can't add wildcards in your hosts file, specify each domain seperatly:
+Note: Sorry windows users, you can't add wildcards in your hosts file, specify each domain separately:
 
 > 192.168.2.200 demo.localdev.nl
 > 192.168.2.200 adminer.localdev.nl
@@ -44,9 +45,13 @@ Install your project in /var/www/[project name] and make sure your public/htdocs
 
 So if we have a project called demo, checkout your project in /var/www/demo and symlink the public directory to web:
 
-ln -s /var/www/demo/web /var/www/demo/public
+ln -s /var/www/demo/public /var/www/demo/web
 
 Your project is now accessible from: demo.localdev.nl
+
+## Adminer ##
+
+By default Adminer (http://adminer.org) is installed and can be accessed from adminer.localdev.nl if added to the host file.
 
 ## Credits ##
 

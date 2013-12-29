@@ -1,4 +1,6 @@
-## 0.3.0 - current master
+## 0.4.0 - current master
+
+## 0.3.0
     * Added dotdeb repository
     * Added .bashrc
     * Added adminer
