@@ -10,6 +10,7 @@ package { $default_packages :
 }
 include project
 
+include project::adminer
 include project::composer
 include project::web
 include project::php5
@@ -19,4 +20,4 @@ include project::phing
 include project::sql
 include project::varnish
 include project::mongodb
-include project::gearman
+#include project::gearman

@@ -2,23 +2,26 @@
 
 ----------
 
-A out of the box solution for a Jenkins-CI setup, the server is installed with the following packages:
+A out of the box solution for a LAMP setup, Debian Wheezy 7.2 is installed with the following packages:
 
-- Ubuntu 13.04 "Raring Ringtail"
-- Apache2
-- PHP 5.4.10
+- Adminer
+- Apache 2.2.22
+- Composer
+- Git
+- MongoDB 2.4.8
+- MySQL 5.5.33
 - Pear
+- Pecl
+- PHP 5.4.23
 - Phing
-- MySQL
+- Subversion
 - SQLite 3
-- Subversion & Git
-- MongoDB
-- Varnish
-- Gearman (not working yet)
+- Varnish 3.0.2
 
 ## Requirements ##
 
-- Vagrant (tested on 1.2.7)
+- Vagrant 1.4
+- Virtualbox 4.3
 
 ## Installation ##
 
@@ -29,4 +32,27 @@ A out of the box solution for a Jenkins-CI setup, the server is installed with t
 
 Change the IP address to whatever you want in the Vagrantfile, and add that IP address to your host file, for example:
 
-> 192.168.2.200 localdev
+> 192.168.2.200 *.localdev.nl
+
+Note: Sorry windows users, you can't add wildcards in your hosts file, specify each domain separately:
+
+> 192.168.2.200 demo.localdev.nl
+> 192.168.2.200 adminer.localdev.nl
+
+## Vhost made easy ##
+
+Install your project in /var/www/[project name] and make sure your public/htdocs folder is symlinked to a directory called web (In case of Symfony 2 applications you're good to go instantly)
+
+So if we have a project called demo, checkout your project in /var/www/demo and symlink the public directory to web:
+
+ln -s /var/www/demo/public /var/www/demo/web
+
+Your project is now accessible from: demo.localdev.nl
+
+## Adminer ##
+
+By default Adminer (http://adminer.org) is installed and can be accessed from adminer.localdev.nl if added to the host file.
+
+## Credits ##
+
+PuPHPet (https://puphpet.com/) for having an excellent out of the box solution for vagrant boxes, this vagrant setup uses their virtualbox image.
