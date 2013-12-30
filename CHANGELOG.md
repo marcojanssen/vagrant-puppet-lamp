@@ -1,4 +1,8 @@
 ## 0.4.0 - current master
+    * Added samba
+
+## 0.3.1
+    * Fixed line endings in bashrc
 
 ## 0.3.0
     * Added dotdeb repository

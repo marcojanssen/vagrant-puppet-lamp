@@ -18,6 +18,7 @@ include project::phpunit
 include project::pear
 include project::phing
 include project::sql
+include project::samba
 include project::varnish
 include project::mongodb
 #include project::gearman
