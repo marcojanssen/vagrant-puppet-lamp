@@ -20,8 +20,8 @@ A out of the box solution for a LAMP setup, Debian Wheezy 7.2 is installed with 
 
 ## Requirements ##
 
-- Vagrant 1.4
-- Virtualbox 4.3
+- Vagrant 1.5.1
+- Virtualbox 4.3.8
 
 ## Installation ##
 
@@ -40,4 +40,4 @@ By default Adminer (http://adminer.org) is installed and can be accessed from ad
 
 ## Credits ##
 
-PuPHPet (https://puphpet.com/) for having an excellent out of the box solution for vagrant boxes, this vagrant setup uses their virtualbox image.
+https://github.com/ffuenf for his excellent debian 7.4 base box
