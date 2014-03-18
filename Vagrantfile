@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "debian-wheezy72-x64-vbox43"
-  config.vm.box_url = "http://box.puphpet.com/debian-wheezy72-x64-vbox43.box"
+  config.vm.box = "fadenb/debian-wheezy-puppet3"
+  config.vm.box_url = "https://vagrantcloud.com/fadenb/debian-wheezy-puppet3/version/1/provider/virtualbox.box"
 
   config.vm.network :private_network, ip: "192.168.2.200"
 
