@@ -2,6 +2,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "ffuenf-debian-7.4.0-amd64"
   config.vm.box_url = "https://s3-eu-west-1.amazonaws.com/ffuenf-vagrant-boxes/debian/debian-7.4.0-amd64_virtualbox.box"
+  config.vm.hostname = "localdev"
 
   config.vm.network :private_network, ip: "192.168.2.200"
 
@@ -16,6 +17,7 @@ Vagrant.configure("2") do |config|
     v.gui = true
   end
 
+  config.vm.provision :shell, :path => "shell/init.sh"
   config.vm.provision :shell, :path => "shell/puppet.sh"
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "manifests"
