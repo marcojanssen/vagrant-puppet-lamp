@@ -1,7 +1,4 @@
-## 0.4.1 - current master
-    * Fixed ssh connection box vagrant 1.5
-
-## 0.4.0
+## 0.4.0 - current master
     * Added samba
 
 ## 0.3.1
