@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "ffuenf-debian-7.4.0-amd64"
-  config.vm.box_url = "https://s3-eu-west-1.amazonaws.com/ffuenf-vagrant-boxes/debian/debian-7.4.0-amd64_virtualbox.box"
+  config.vm.box = "debian-7.4.0-amd64"
+  config.vm.box_url = "https://vagrantcloud.com/chef/debian-7.4/version/1/provider/virtualbox.box"
   config.vm.hostname = "localdev"
 
   config.vm.network :private_network, ip: "192.168.2.200"
