@@ -2,21 +2,21 @@
 
 ----------
 
-A out of the box solution for a LAMP setup, Debian Wheezy 7.2 is installed with the following packages:
+A out of the box solution for a LAMP setup, Debian Wheezy 7.4 is installed with the following packages:
 
 - Adminer
-- Apache 2.2.22
+- Apache 2.2
 - Composer
 - Git
-- MongoDB 2.4.8
-- MySQL 5.5.33
+- MongoDB 2.4
+- MySQL 5.5
 - Pear
 - Pecl
-- PHP 5.4.23
+- PHP 5.4
 - Phing
 - Subversion
 - SQLite 3
-- Varnish 3.0.2
+- Varnish
 
 ## Requirements ##
 
