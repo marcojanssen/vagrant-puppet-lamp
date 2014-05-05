@@ -22,3 +22,4 @@ include project::samba
 include project::varnish
 include project::mongodb
 #include project::gearman
+include project::pdflib
