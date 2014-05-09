@@ -3,7 +3,7 @@ Exec {
 }
 
 # Install some default packages
-$default_packages = [ 'build-essential', 'vim', 'curl', 'git', 'subversion' ]
+$default_packages = [ 'build-essential', 'vim', 'curl', 'git' ]
 package { $default_packages :
   ensure => present,
   require => Exec['apt-update'],
@@ -21,5 +21,4 @@ include project::sql
 include project::samba
 include project::varnish
 include project::mongodb
-#include project::gearman
 include project::pdflib
