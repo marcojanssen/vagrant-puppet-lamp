@@ -24,10 +24,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision :shell, :path => "shell/puppet.sh"
-  config.vm.provision :puppet do |puppet|
-    puppet.manifests_path = "manifests"
-    puppet.module_path = "modules"
-    puppet.options = "--verbose"
-  end
+  #config.vm.provision :puppet do |puppet|
+  #  puppet.manifests_path = "manifests"
+  #  puppet.module_path = "modules"
+  #  puppet.options = "--verbose"
+  #end
 end
 
