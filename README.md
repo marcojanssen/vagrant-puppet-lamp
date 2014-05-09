@@ -5,18 +5,16 @@
 A out of the box solution for a LAMP setup, Ubuntu 14.04 is installed with the following packages:
 
 - Adminer
-- Apache 2.2
+- Apache 2.4
 - Composer
 - Git
-- MongoDB 2.4
+- MongoDB 2.6
 - MySQL 5.5
 - Pear
 - Pecl
-- PHP 5.4
+- PHP 5.5
 - Phing
-- Subversion
-- SQLite 3
-- Varnish
+- SQLite
 
 ## Requirements ##
 
