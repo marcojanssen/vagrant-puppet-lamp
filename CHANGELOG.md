@@ -1,4 +1,7 @@
-## 0.4.0 - current master
+## 0.5.0
+    * Switched to Ubuntu 14.04
+
+## 0.4.0
     * Added samba
 
 ## 0.3.1

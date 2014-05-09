@@ -2,7 +2,7 @@
 
 ----------
 
-A out of the box solution for a LAMP setup, Debian Wheezy 7.4 is installed with the following packages:
+A out of the box solution for a LAMP setup, Ubuntu 14.04 is installed with the following packages:
 
 - Adminer
 - Apache 2.2
@@ -20,8 +20,8 @@ A out of the box solution for a LAMP setup, Debian Wheezy 7.4 is installed with 
 
 ## Requirements ##
 
-- Vagrant 1.5.1
-- Virtualbox 4.3.8
+- Vagrant 1.5.3
+- Virtualbox 4.3.10
 
 ## Installation ##
 
@@ -36,8 +36,4 @@ Change the IP address to whatever you want in the Vagrantfile, and add that IP a
 
 ## Adminer ##
 
-By default Adminer (http://adminer.org) is installed and can be accessed from adminer.localdev.nl if added to the host file.
-
-## Credits ##
-
-https://github.com/ffuenf for his excellent debian 7.4 base box
+By default Adminer (http://adminer.org) is installed and can be accessed from adminer.localhost.com if added to the host file.
